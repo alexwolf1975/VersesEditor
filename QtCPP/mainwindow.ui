@@ -68,6 +68,7 @@
           <property name="font">
            <font>
             <family>Arial</family>
+            <pointsize>12</pointsize>
            </font>
           </property>
           <property name="text">
@@ -86,6 +87,7 @@
           <property name="font">
            <font>
             <family>Arial</family>
+            <pointsize>12</pointsize>
             <kerning>true</kerning>
            </font>
           </property>
@@ -105,6 +107,7 @@
           <property name="font">
            <font>
             <family>Arial</family>
+            <pointsize>12</pointsize>
            </font>
           </property>
           <property name="text">

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '/home/alexwolf/study/python/verseseditor.ui'
 #
-# Created: Fri Feb  3 23:49:11 2017
+# Created: Sun Feb 19 13:47:51 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtGui.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 792, 565))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 792, 570))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.horizontalLayout = QtGui.QHBoxLayout(self.scrollAreaWidgetContents)
         self.horizontalLayout.setSpacing(2)
@@ -33,6 +33,7 @@ class Ui_MainWindow(object):
         self.number = QtGui.QLabel(self.scrollAreaWidgetContents)
         font = QtGui.QFont()
         font.setFamily("Arial")
+        font.setPointSize(12)
         self.number.setFont(font)
         self.number.setText("")
         self.number.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTop|QtCore.Qt.AlignTrailing)
@@ -42,6 +43,7 @@ class Ui_MainWindow(object):
         self.text = QtGui.QPlainTextEdit(self.scrollAreaWidgetContents)
         font = QtGui.QFont()
         font.setFamily("Arial")
+        font.setPointSize(12)
         self.text.setFont(font)
         self.text.setLineWidth(0)
         self.text.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
@@ -51,6 +53,7 @@ class Ui_MainWindow(object):
         self.count = QtGui.QLabel(self.scrollAreaWidgetContents)
         font = QtGui.QFont()
         font.setFamily("Arial")
+        font.setPointSize(12)
         self.count.setFont(font)
         self.count.setText("")
         self.count.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
@@ -61,7 +64,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.scrollArea)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 27))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
         self.menubar.setObjectName("menubar")
         self.File = QtGui.QMenu(self.menubar)
         self.File.setObjectName("File")
