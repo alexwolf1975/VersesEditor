@@ -1,5 +1,5 @@
 #include "options.h"
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QSettings>
 
 options::options()
@@ -8,4 +8,4 @@ options::options()
 }
 
 QSettings* options::config = new QSettings("VersesEditor.ini", QSettings::IniFormat);
-QRegExp options::expression = QRegExp("[АаЕеЁёИиОоУуЫыЭэЮюЯя]");
+QRegularExpression options::expression = QRegularExpression("[АаЕеЁёИиОоУуЫыЭэЮюЯя]");

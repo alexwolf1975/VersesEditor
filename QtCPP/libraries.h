@@ -1,10 +1,10 @@
 #ifndef LIBRARIES
 #define LIBRARIES
 
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QString>
 
-int VowelCount(QString s, QRegExp expression);
+int VowelCount(QString s, QRegularExpression expression);
 
 #endif // LIBRARIES
 

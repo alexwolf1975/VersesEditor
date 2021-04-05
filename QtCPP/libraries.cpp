@@ -1,15 +1,15 @@
 #include "libraries.h"
 
-int VowelCount(QString s, QRegExp expression)
+int VowelCount(QString s, QRegularExpression expression)
 {
     int count = 0;
-    int index = expression.indexIn(s);
+    QRegularExpressionMatch match = expression.match(s);
+    int index = match.capturedStart();
     while (index >= 0)
     {
-        index = expression.pos();
-        int length = expression.cap().length();
-        count += length;
-        index = expression.indexIn(s, index + length);
+        count += match.capturedLength();
+        match = expression.match(s, match.capturedEnd());
+        index = match.capturedStart();
     }
     return count;
 }

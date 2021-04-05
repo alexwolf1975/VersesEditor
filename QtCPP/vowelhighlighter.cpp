@@ -20,12 +20,12 @@ void VowelHighlighter::highlightBlock(const QString &text)
 {
     QTextCharFormat TextFormat = QTextCharFormat();
     TextFormat.setForeground(color);
-    int index = cnf->expression.indexIn(text);
+    QRegularExpressionMatch match = cnf->expression.match(text);
+    int index = match.capturedStart();
     while (index >= 0)
     {
-        index = cnf->expression.pos();
-        int length = cnf->expression.cap().length();
-        setFormat(index, length, TextFormat);
-        index = cnf->expression.indexIn(text, index + length);
+        setFormat(index, match.capturedLength(), TextFormat);
+        match = cnf->expression.match(text, match.capturedEnd());
+        index = match.capturedStart();
     }
 }

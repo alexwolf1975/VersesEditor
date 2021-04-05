@@ -1,7 +1,7 @@
 #ifndef OPTIONS_H
 #define OPTIONS_H
 
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QSettings>
 
 class options
@@ -10,7 +10,7 @@ public:
 
     options();
     static QSettings* config;
-    static QRegExp expression;
+    static QRegularExpression expression;
 
 };
 
